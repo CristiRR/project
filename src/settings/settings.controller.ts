@@ -1,8 +1,4 @@
-//import { Controller } from '@nestjs/common';
 
-//@Controller('settings')
-//export class SettingsController {}
-// src/settings/settings.controller.ts
 
 import { Controller, Get, Request, UseGuards } from '@nestjs/common';
 import { JwtAuthGuard } from 'src/auth/jwt-auth.guard';
@@ -13,7 +9,7 @@ export class SettingsController {
   @Get()
   getSettings(@Request() req) {
     return {
-      mensaje: 'Bienvenido',
+      mensaje: 'Bienvenido a tu configuracion , Juan Pérez',
       email: req.user.email,
     };
   }

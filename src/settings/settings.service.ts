@@ -17,7 +17,7 @@ import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class SettingsService {
-  // Lógica futura de configuración del usuario
+  
 }
 
 
